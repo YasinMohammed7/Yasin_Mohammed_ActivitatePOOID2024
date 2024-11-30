@@ -27,5 +27,8 @@
     <ClCompile Include="Intalnirea3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Intalnirea4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
