@@ -132,6 +132,7 @@
     <ClCompile Include="Intalnirea2.2.cpp" />
     <ClCompile Include="Intalnirea3.cpp" />
     <ClCompile Include="Intalnirea4.cpp" />
+    <ClCompile Include="TaskuriSuplimentarePOO.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
