@@ -29,7 +29,7 @@ public:
 	Manager(const Manager& man):id(++nrManageri) {
 		this->nume = man.nume;
 		this->salariu = man.salariu;
-		if (this->companie != nullptr)
+		if (man.companie != nullptr)
 		{
 			this->companie = new char[strlen(man.companie) + 1];
 			strcpy_s(this->companie, strlen(man.companie) + 1, man.companie);
@@ -159,6 +159,8 @@ int main() {
 	man1.afisare();
 	Manager man2("Alex", 4000, "unicredit");
 	man2.afisare();
+	Manager man3 = man2;
+	man3.afisare();
 	man2.setCompanie("BCR");
 	cout << "Nr. total manageri: " << Manager::getNrManageri() << endl;
 	cout << "Salariul " << man2.getSalariu() << " este asigurat de compania " << man2.getCompanie() << endl << endl;
@@ -169,6 +171,8 @@ int main() {
 	int* preturi = new int[3] {4, 5, 6};
 
 	Motor m2(3, "mertan", preturi);
+	m2.afisare();
+	Motor m3 = m2;
 	m2.afisare();
 	m2.setPreturi(new int[6] {2, 5, 4, 8, 6, 3}, 6);
 	cout << "Nr. total motociclete: " << Motor::getNrMotoare() << endl;
